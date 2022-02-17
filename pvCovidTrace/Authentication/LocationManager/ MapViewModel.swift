@@ -29,21 +29,19 @@ final class MapViewModel: ObservableObject {
         guard let locationManager = locationManager else {return }
         
         //location Authorization
-        //All cases to be handled 
+        //All cases to be handled
         switch locationManager.authorizationStatus {
             
         case .notDetermined:
-            <#code#>
+            locationManager.requestWhenInUseAuthorization() //when in our app
         case .restricted:
-            <#code#>
+            print("show alert , parental controls ") //crerate a window for this error message
         case .denied:
-            <#code#>
-        case .authorizedAlways:
-            <#code#>
-        case .authorizedWhenInUse:
-            <#code#>
+            print("You have denied acces") //create another pop up error message
+        case .authorizedAlways, .authorizedWhenInUse:
+            break //will vbisit this back 
         @unknown default:
-            <#code#>
+            break
         }
         
         
