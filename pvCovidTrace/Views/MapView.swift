@@ -12,6 +12,9 @@ import MapKit
 struct MapView: View {
     //MARK: -Properties
     
+    @StateObject private var viewModel = MapViewModel()
+    //allows acces to my model in location manager
+    
     @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 30.095264, longitude: -95.989301), span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
     
     var body: some View {

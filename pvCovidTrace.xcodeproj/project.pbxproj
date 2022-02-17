@@ -27,6 +27,7 @@
 		8E9D785F27BEA3C400E3BC6D /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 8E9D785E27BEA3C400E3BC6D /* FirebaseFunctions */; };
 		8E9D786127BEA3C400E3BC6D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 8E9D786027BEA3C400E3BC6D /* FirebaseStorage */; };
 		8E9D786327BEA3FB00E3BC6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E9D786227BEA3FB00E3BC6D /* GoogleService-Info.plist */; };
+		8E9D786627BEAB4C00E3BC6D /*  MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D786527BEAB4C00E3BC6D /*  MapViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		8E9D785127BE9B4A00E3BC6D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		8E9D785727BEA05C00E3BC6D /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		8E9D786227BEA3FB00E3BC6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8E9D786527BEAB4C00E3BC6D /*  MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " MapViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				8E29212827BE025700A53873 /* AuthenticationViewModel.swift */,
 				8E29212A27BE025F00A53873 /* LoginView.swift */,
 				8E29212C27BE026E00A53873 /* RegistrationViewSheet.swift */,
+				8E9D786427BEAACF00E3BC6D /* LocationManager */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -149,6 +152,14 @@
 				8E29213027BE02C100A53873 /* Color+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8E9D786427BEAACF00E3BC6D /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				8E9D786527BEAB4C00E3BC6D /*  MapViewModel.swift */,
+			);
+			path = LocationManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +252,7 @@
 				8E29210A27BE007A00A53873 /* pvCovidTraceApp.swift in Sources */,
 				8E29212927BE025700A53873 /* AuthenticationViewModel.swift in Sources */,
 				8E29211D27BE00FF00A53873 /* LocationDetailView.swift in Sources */,
+				8E9D786627BEAB4C00E3BC6D /*  MapViewModel.swift in Sources */,
 				8E29212B27BE025F00A53873 /* LoginView.swift in Sources */,
 				8E9D785827BEA05C00E3BC6D /* AuthViewModel.swift in Sources */,
 				8E29211927BE00E400A53873 /* MainTabView.swift in Sources */,
