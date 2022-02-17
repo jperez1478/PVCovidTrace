@@ -9,7 +9,7 @@ import MapKit
 import SwiftUI
 
 
-final class MapViewModel: ObservableObject {
+final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     
     var locationManager: CLLocationManager? //optional because a user can turn off Location Services for the whole phone
     
@@ -17,14 +17,16 @@ final class MapViewModel: ObservableObject {
     func checkIfLocationServicesIsEnabled() {
         if CLLocationManager.locationServicesEnabled() {
             locationManager = CLLocationManager()
-            locationManager?.activityType = .airborne
+            locationManager?.delegate = self 
+          locationManager?.activityType = .airborne
             locationManager?.desiredAccuracy = kCLLocationAccuracyBest
+            
         } else {
             print("Show alert here to know is off and turn it off")
         }
     }
     
-    func checkLocationAuthorization() {
+  private func checkLocationAuthorization() {
         //wrap in optional so we can use the location manager in the scope of this fucntion
         guard let locationManager = locationManager else {return }
         
@@ -43,8 +45,12 @@ final class MapViewModel: ObservableObject {
         @unknown default:
             break
         }
-        
-        
-        
+    }
+    
+    ////The system calls the delegate’s locationManagerDidChangeAuthorization(_:) method immediately when you create a location manager, and again when the app’s authorization changes. The delegate handles all location and heading-related updates and events.
+
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        //checklocations
+        checkLocationAuthorization()
     }
 }

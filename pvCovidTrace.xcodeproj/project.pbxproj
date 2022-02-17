@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8E29210A27BE007A00A53873 /* pvCovidTraceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29210927BE007A00A53873 /* pvCovidTraceApp.swift */; };
-		8E29210C27BE007A00A53873 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29210B27BE007A00A53873 /* ContentView.swift */; };
 		8E29210E27BE007B00A53873 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E29210D27BE007B00A53873 /* Assets.xcassets */; };
 		8E29211127BE007B00A53873 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E29211027BE007B00A53873 /* Preview Assets.xcassets */; };
 		8E29211927BE00E400A53873 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29211827BE00E400A53873 /* MainTabView.swift */; };
@@ -33,7 +32,6 @@
 /* Begin PBXFileReference section */
 		8E29210627BE007A00A53873 /* pvCovidTrace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pvCovidTrace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E29210927BE007A00A53873 /* pvCovidTraceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pvCovidTraceApp.swift; sourceTree = "<group>"; };
-		8E29210B27BE007A00A53873 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8E29210D27BE007B00A53873 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E29211027BE007B00A53873 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8E29211827BE00E400A53873 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 				8E29212727BE022F00A53873 /* Authentication */,
 				8E29212E27BE028600A53873 /* Models */,
 				8E29210927BE007A00A53873 /* pvCovidTraceApp.swift */,
-				8E29210B27BE007A00A53873 /* ContentView.swift */,
 				8E29210D27BE007B00A53873 /* Assets.xcassets */,
 				8E9D786227BEA3FB00E3BC6D /* GoogleService-Info.plist */,
 				8E29210F27BE007B00A53873 /* Preview Content */,
@@ -244,7 +241,6 @@
 			files = (
 				8E29212427BE021C00A53873 /* MapView.swift in Sources */,
 				8E9D785227BE9B4A00E3BC6D /* ProfileView.swift in Sources */,
-				8E29210C27BE007A00A53873 /* ContentView.swift in Sources */,
 				8E29212627BE022700A53873 /* NewsFeed.swift in Sources */,
 				8E29212D27BE026E00A53873 /* RegistrationViewSheet.swift in Sources */,
 				8E29213127BE02C100A53873 /* Color+Ext.swift in Sources */,
@@ -386,8 +382,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"pvCovidTrace/Preview Content\"";
+				DEVELOPMENT_TEAM = 8C93KVSWF7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "PVCovidTrace Needs access to location to show on map ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -415,8 +413,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"pvCovidTrace/Preview Content\"";
+				DEVELOPMENT_TEAM = 8C93KVSWF7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "PVCovidTrace Needs access to location to show on map ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

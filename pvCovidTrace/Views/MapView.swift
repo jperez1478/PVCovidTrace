@@ -22,6 +22,10 @@ struct MapView: View {
         ZStack {
             Map(coordinateRegion: $region)
                 .ignoresSafeArea()
+                .accentColor(Color(.systemPurple))
+                .onAppear{
+                    viewModel.checkIfLocationServicesIsEnabled()
+                }
             VStack{
                 Image("pvmap")
                     .resizable()
