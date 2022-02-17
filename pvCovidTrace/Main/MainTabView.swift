@@ -9,7 +9,29 @@ import SwiftUI
 
 struct MainTabView: View {
     var body: some View {
-        Text("MainTabView")
+        TabView {
+            NewsFeed()
+                .tabItem {
+                    Label("PV News", systemImage: "newspaper")
+                }
+            
+                    
+            MapView()
+                .tabItem {
+                    Label("Map", systemImage: "mappin.and.ellipse")
+                        }
+            LocationListView()
+                .tabItem {
+                    Label("Check in", systemImage: "person.fill.checkmark")
+                }
+            ProfileView()
+                .tabItem {
+                    Label("Profile", systemImage: "person")
+                }
+            
+            
+        }
+        .accentColor(.brandPrimary)
     }
 }
 
