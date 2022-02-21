@@ -44,7 +44,7 @@ struct LocationDetailView: View {
                         LoadActionButton(color: .brandPrimary, imageName: "location.fill")
                     }
                     Link(destination: URL(string: "https://pvamu.co1.qualtrics.com/jfe/form/SV_8w9tG1p7X4jADQ2")!, label: {
-                        LoadActionButton(color: .brandPrimary, imageName: "Network")
+                        LoadActionButton(color: .brandPrimary, imageName: "network")
                     })
                     
                     Button {
