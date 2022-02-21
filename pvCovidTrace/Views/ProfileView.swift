@@ -37,12 +37,12 @@ struct ProfileView: View {
                     
                     VStack(spacing: 1) {
                         TextField("First Name", text: $firstName)
-                            .font(.headline)
+                            .font(.system(size: 32, weight: .bold))
                             .lineLimit(1)
                             .minimumScaleFactor(0.75)
                         
                         TextField("Last Name", text: $lastName)
-                            .font(.headline)
+                            .font(.system(size: 32, weight: .bold))                            .font(.headline)
                             .lineLimit(1)
                             .minimumScaleFactor(0.75)
                         
@@ -58,12 +58,28 @@ struct ProfileView: View {
                 .padding()
         }
             VStack {
-                Text("Current Status: ")
+                Text("Current Status")
                 
                 TextEditor(text: $covidStatus)
+                    .frame(width: 75, height: 50)
+                    .overlay(RoundedRectangle(cornerRadius:8)
+                                .stroke(Color.secondary,lineWidth: 1))
             }
+            .padding(.horizontal,50)
         Spacer()
-    }
+            
+            Button {
+            } label: {
+                Text("Submit Status")
+                    .bold()
+                    .frame(width: 280, height: 44)
+                    .background(Color.brandPrimary)
+                    .foregroundColor(.white)
+                    .cornerRadius(8)
+                    
+                }
+            }
+    
     .navigationTitle("Profile")
         
     }
