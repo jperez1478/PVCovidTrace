@@ -20,6 +20,7 @@
 		8E29212D27BE026E00A53873 /* RegistrationViewSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29212C27BE026E00A53873 /* RegistrationViewSheet.swift */; };
 		8E29213127BE02C100A53873 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29213027BE02C100A53873 /* Color+Ext.swift */; };
 		8E8612AB27C3F47D00F60237 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8612AA27C3F47D00F60237 /* LocationCell.swift */; };
+		8E8612B027C3FE3100F60237 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8612AF27C3FE3100F60237 /* CloudKit.framework */; };
 		8E9D785227BE9B4A00E3BC6D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D785127BE9B4A00E3BC6D /* ProfileView.swift */; };
 		8E9D785827BEA05C00E3BC6D /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D785727BEA05C00E3BC6D /* AuthViewModel.swift */; };
 		8E9D785B27BEA3C400E3BC6D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8E9D785A27BEA3C400E3BC6D /* FirebaseAuth */; };
@@ -45,6 +46,8 @@
 		8E29212C27BE026E00A53873 /* RegistrationViewSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewSheet.swift; sourceTree = "<group>"; };
 		8E29213027BE02C100A53873 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		8E8612AA27C3F47D00F60237 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		8E8612AD27C3FC7A00F60237 /* pvCovidTrace.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pvCovidTrace.entitlements; sourceTree = "<group>"; };
+		8E8612AF27C3FE3100F60237 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		8E9D785127BE9B4A00E3BC6D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		8E9D785727BEA05C00E3BC6D /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		8E9D786227BEA3FB00E3BC6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E8612B027C3FE3100F60237 /* CloudKit.framework in Frameworks */,
 				8E9D785F27BEA3C400E3BC6D /* FirebaseFunctions in Frameworks */,
 				8E9D786127BEA3C400E3BC6D /* FirebaseStorage in Frameworks */,
 				8E9D785B27BEA3C400E3BC6D /* FirebaseAuth in Frameworks */,
@@ -71,6 +75,7 @@
 			children = (
 				8E29210827BE007A00A53873 /* pvCovidTrace */,
 				8E29210727BE007A00A53873 /* Products */,
+				8E8612AE27C3FE3100F60237 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +90,7 @@
 		8E29210827BE007A00A53873 /* pvCovidTrace */ = {
 			isa = PBXGroup;
 			children = (
+				8E8612AD27C3FC7A00F60237 /* pvCovidTrace.entitlements */,
 				8E29211727BE00D500A53873 /* Main */,
 				8E29212227BE01F200A53873 /* Views */,
 				8E29212727BE022F00A53873 /* Authentication */,
@@ -160,6 +166,14 @@
 				8E8612AA27C3F47D00F60237 /* LocationCell.swift */,
 			);
 			path = LocationView;
+			sourceTree = "<group>";
+		};
+		8E8612AE27C3FE3100F60237 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E8612AF27C3FE3100F60237 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8E9D786427BEAACF00E3BC6D /* LocationManager */ = {
@@ -391,6 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = pvCovidTrace/pvCovidTrace.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"pvCovidTrace/Preview Content\"";
@@ -409,7 +424,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jess.pvCovidTrace;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jess.pvCovidTrace22;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -422,6 +437,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = pvCovidTrace/pvCovidTrace.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"pvCovidTrace/Preview Content\"";
@@ -440,7 +456,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jess.pvCovidTrace;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jess.pvCovidTrace22;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
