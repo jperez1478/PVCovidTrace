@@ -24,12 +24,12 @@ struct MainTabView: View {
                 .tabItem {
                     Label("Check in", systemImage: "person.fill.checkmark")
                 }
-            NavigationView {
+           // NavigationView {
                 ProfileView()
                     .tabItem {
                         Label("Profile", systemImage: "person")
                     }
-            }
+          //  }
         }
         .accentColor(.brandPrimary)
     }
