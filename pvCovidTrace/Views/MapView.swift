@@ -20,7 +20,7 @@ struct MapView: View {
     var body: some View {
         //MARK: -Body
         ZStack {
-            Map(coordinateRegion: $region)
+            Map(coordinateRegion: $region, showsUserLocation: true)
                 .ignoresSafeArea()
                 .accentColor(Color(.systemPurple))
                 .onAppear{
