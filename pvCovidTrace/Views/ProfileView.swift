@@ -17,6 +17,11 @@ struct ProfileView: View {
         
     var body: some View {
         VStack {
+            HStack{
+                Text("Profile")
+                    .font(.system(size: 30, weight: .heavy))
+                
+            }
             ZStack {
                 Color(.secondarySystemBackground)
                     .frame(height: 130)
