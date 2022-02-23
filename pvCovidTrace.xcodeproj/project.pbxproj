@@ -29,6 +29,7 @@
 		8E9D786127BEA3C400E3BC6D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 8E9D786027BEA3C400E3BC6D /* FirebaseStorage */; };
 		8E9D786327BEA3FB00E3BC6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E9D786227BEA3FB00E3BC6D /* GoogleService-Info.plist */; };
 		8E9D786627BEAB4C00E3BC6D /*  MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D786527BEAB4C00E3BC6D /*  MapViewModel.swift */; };
+		8ED5382927C69F0B00BA2375 /* PVLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5382827C69F0B00BA2375 /* PVLocations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		8E9D785727BEA05C00E3BC6D /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		8E9D786227BEA3FB00E3BC6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8E9D786527BEAB4C00E3BC6D /*  MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " MapViewModel.swift"; sourceTree = "<group>"; };
+		8ED5382827C69F0B00BA2375 /* PVLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVLocations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 			children = (
 				8E9D785727BEA05C00E3BC6D /* AuthViewModel.swift */,
 				8E29212F27BE02A700A53873 /* Extensions */,
+				8ED5382827C69F0B00BA2375 /* PVLocations.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				8E29210A27BE007A00A53873 /* pvCovidTraceApp.swift in Sources */,
 				8E29212927BE025700A53873 /* AuthenticationViewModel.swift in Sources */,
 				8E29211D27BE00FF00A53873 /* LocationDetailView.swift in Sources */,
+				8ED5382927C69F0B00BA2375 /* PVLocations.swift in Sources */,
 				8E9D786627BEAB4C00E3BC6D /*  MapViewModel.swift in Sources */,
 				8E29212B27BE025F00A53873 /* LoginView.swift in Sources */,
 				8E9D785827BEA05C00E3BC6D /* AuthViewModel.swift in Sources */,
