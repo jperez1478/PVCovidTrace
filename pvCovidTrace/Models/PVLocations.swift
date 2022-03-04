@@ -38,7 +38,7 @@ struct PVLocation {
         squareAsset = record[PVLocation.kSquareAsset] as?  CKAsset
         bannerAsset = record[PVLocation.kBannerAsset] as? CKAsset
         adress     = record[PVLocation.KAdress] as? String ?? "N/A"
-        location   = record[PVLocation.kLocation] as? CLLocation ?? CLLocation(latitude: 0,      longitude: 0)
+        location   = record[PVLocation.kLocation] as? CLLocation ?? CLLocation(latitude: 0,  longitude: 0)
         phoneNumber = record[PVLocation.kPhoneNumber] as? String ?? "N/A"
         webisteURL = record[PVLocation.kWebsiteUrl] as? String ?? "N/A"
     }

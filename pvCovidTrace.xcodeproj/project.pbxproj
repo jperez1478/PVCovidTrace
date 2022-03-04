@@ -142,7 +142,6 @@
 				8E29212827BE025700A53873 /* AuthenticationViewModel.swift */,
 				8E29212A27BE025F00A53873 /* LoginView.swift */,
 				8E29212C27BE026E00A53873 /* RegistrationViewSheet.swift */,
-				8E9D786427BEAACF00E3BC6D /* LocationManager */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -153,6 +152,7 @@
 				8E9D785727BEA05C00E3BC6D /* AuthViewModel.swift */,
 				8ED5382A27C6BDB300BA2375 /* PVProfile.swift */,
 				8ED5382827C69F0B00BA2375 /* PVLocations.swift */,
+				8E9D786427BEAACF00E3BC6D /* LocationManager */,
 				8E29212F27BE02A700A53873 /* Extensions */,
 			);
 			path = Models;
@@ -187,8 +187,8 @@
 		8E9D786427BEAACF00E3BC6D /* LocationManager */ = {
 			isa = PBXGroup;
 			children = (
-				8ED5382C27C6C09800BA2375 /* Managers */,
 				8E9D786527BEAB4C00E3BC6D /*  MapViewModel.swift */,
+				8ED5382C27C6C09800BA2375 /* Managers */,
 			);
 			path = LocationManager;
 			sourceTree = "<group>";
