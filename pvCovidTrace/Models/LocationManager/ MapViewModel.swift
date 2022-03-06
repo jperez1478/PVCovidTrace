@@ -18,7 +18,7 @@ final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate 
         if CLLocationManager.locationServicesEnabled() {
             locationManager = CLLocationManager()
             locationManager?.delegate = self 
-          locationManager?.activityType = .airborne
+            locationManager?.activityType = .airborne
             locationManager?.desiredAccuracy = kCLLocationAccuracyBest
             
         } else {
