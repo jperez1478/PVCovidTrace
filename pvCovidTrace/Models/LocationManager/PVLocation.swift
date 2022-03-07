@@ -13,6 +13,10 @@ struct PVLocations {
     static let kName = "name"
     static let kDescription = "description"
     static let kSquareAsset = "squareAsset"
+    static let kBannerAsset = "bannerAsset"
+    static let kAdress     = "adress"
+    static let kPhoneNumber = "phoneNumber"
+    static let klocation   = "location"
     
     
     let ckRecordID: CKRecord.ID //reference to our pvProfile  to our location to checj in recordid imp
@@ -24,11 +28,17 @@ struct PVLocations {
     let location: CLLocation
     let phoneNumber: String
     
- 
+
     init(record: CKRecord) {
         ckRecordID = record.recordID
         name = record[PVLocation.kName] as? String ?? "N/A"
-        description = record["descirption"] as? String ?? "N/A"
-        squareAsset = record[PVLocation.kSquareAsset] as? CKAsset ?? CKAsset(
+        description = record[PVLocation.KDescription] as? String ?? "N/A"
+        squareAsset = record[PVLocation.kSquareAsset] as? CKAsset
+        bannerAsset = record[PVLocation.kBannerAsset] as? CKAsset
+        adresss = record[PVLocation.KAdress] as? String ?? "N/A"
+        location = record[PVLocation.kLocation] as? CLLocation ?? CLLocation(latitude: 0, longitude: 0)
+        phoneNumber = record[PVLocation.kPhoneNumber] as? String ?? "N/A"
     }
 }
+
+//initializing in an extension of PVLocation
