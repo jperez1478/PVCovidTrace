@@ -11,9 +11,10 @@ import SwiftUI
 struct LocationDetailView: View {
     let columns = [GridItem(.flexible()),
                    GridItem(.flexible()),
-                   GridItem(.flexible())
-                   
-    ]
+                   GridItem(.flexible())]
+    
+    var location: PVLocations
+    
     var body: some View {
         VStack{
             Image("og")
@@ -21,18 +22,13 @@ struct LocationDetailView: View {
                 .scaledToFit()
                 .frame(height: 150)
             HStack {
-                Label("240 E M Norris St, Prairie View, TX 77446", systemImage: "mappin.and.ellipse")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
+                AdressView(adress: location.adresss)
                 Spacer()
             }
             .padding(.horizontal)
             
-            Text("This will be the check in for this location , this is just a test description")
-                .lineLimit(3)
-                .minimumScaleFactor(0.75)
-                .frame(height: 70)
-                .padding(.horizontal)
+            DescriptionView(text: location.description)
+            
             //button check in
             ZStack {
                 Capsule()
@@ -83,7 +79,7 @@ struct LocationDetailView: View {
             
             Spacer()
         }
-        .navigationTitle("University View")
+        .navigationTitle(location.name)
         .navigationBarTitleDisplayMode(.inline)
     }
 }
@@ -91,7 +87,7 @@ struct LocationDetailView: View {
 struct LocationDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            LocationDetailView()
+            LocationDetailView(location: PVLocations(record: MockData.location))
         }
       
 .previewInterfaceOrientation(.portrait)
@@ -143,5 +139,25 @@ struct FirstNameAvatarView: View {
                 .lineLimit(1)
                 .minimumScaleFactor(0.75)
         }
+    }
+}
+
+struct AdressView: View {
+    var adress: String
+    
+    var body: some View {
+        Label(adress, systemImage: "mapping.and.ellipse")
+    }
+}
+
+struct DescriptionView: View {
+    var text: String
+    
+    var body: some View {
+        Text(text)
+            .lineLimit(3)
+            .minimumScaleFactor(0.75)
+            .frame(height: 70)
+            .padding(.horizontal)
     }
 }

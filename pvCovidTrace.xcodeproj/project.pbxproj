@@ -23,6 +23,8 @@
 		8E29213127BE02C100A53873 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29213027BE02C100A53873 /* Color+Ext.swift */; };
 		8E8612AB27C3F47D00F60237 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8612AA27C3F47D00F60237 /* LocationCell.swift */; };
 		8E8612B027C3FE3100F60237 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8612AF27C3FE3100F60237 /* CloudKit.framework */; };
+		8E95F95C27D683FB004D9551 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E95F95B27D683FB004D9551 /* CloudKitManager.swift */; };
+		8E95F95E27D684EB004D9551 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E95F95D27D684EB004D9551 /* Constants.swift */; };
 		8E9D785227BE9B4A00E3BC6D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D785127BE9B4A00E3BC6D /* ProfileView.swift */; };
 		8E9D785827BEA05C00E3BC6D /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D785727BEA05C00E3BC6D /* AuthViewModel.swift */; };
 		8E9D785B27BEA3C400E3BC6D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8E9D785A27BEA3C400E3BC6D /* FirebaseAuth */; };
@@ -54,6 +56,8 @@
 		8E8612AA27C3F47D00F60237 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		8E8612AD27C3FC7A00F60237 /* pvCovidTrace.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pvCovidTrace.entitlements; sourceTree = "<group>"; };
 		8E8612AF27C3FE3100F60237 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		8E95F95B27D683FB004D9551 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
+		8E95F95D27D684EB004D9551 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8E9D785127BE9B4A00E3BC6D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		8E9D785727BEA05C00E3BC6D /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		8E9D786227BEA3FB00E3BC6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -151,7 +155,11 @@
 		8E29212E27BE028600A53873 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8E9D786527BEAB4C00E3BC6D /*  MapViewModel.swift */,
 				8E9D785727BEA05C00E3BC6D /* AuthViewModel.swift */,
+				8ED5382A27C6BDB300BA2375 /* PVProfile.swift */,
+				8E11ADF727D4A6590074208A /* PVLocation.swift */,
+				8EC030A627D663AB00ACCBDD /* MockData.swift */,
 				8E9D786427BEAACF00E3BC6D /* LocationManager */,
 				8E29212F27BE02A700A53873 /* Extensions */,
 			);
@@ -188,7 +196,6 @@
 			isa = PBXGroup;
 			children = (
 				8E11ADF527D1FF210074208A /* LocationManager.swift */,
-				8E9D786527BEAB4C00E3BC6D /*  MapViewModel.swift */,
 				8ED5382C27C6C09800BA2375 /* Managers */,
 			);
 			path = LocationManager;
@@ -197,9 +204,8 @@
 		8ED5382C27C6C09800BA2375 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				8ED5382A27C6BDB300BA2375 /* PVProfile.swift */,
-				8E11ADF727D4A6590074208A /* PVLocation.swift */,
-				8EC030A627D663AB00ACCBDD /* MockData.swift */,
+				8E95F95B27D683FB004D9551 /* CloudKitManager.swift */,
+				8E95F95D27D684EB004D9551 /* Constants.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -292,12 +298,14 @@
 				8E11ADF827D4A6590074208A /* PVLocation.swift in Sources */,
 				8E8612AB27C3F47D00F60237 /* LocationCell.swift in Sources */,
 				8E29213127BE02C100A53873 /* Color+Ext.swift in Sources */,
+				8E95F95C27D683FB004D9551 /* CloudKitManager.swift in Sources */,
 				8E11ADF627D1FF210074208A /* LocationManager.swift in Sources */,
 				8E29211B27BE00F300A53873 /* LocationListView.swift in Sources */,
 				8E29210A27BE007A00A53873 /* pvCovidTraceApp.swift in Sources */,
 				8E29212927BE025700A53873 /* AuthenticationViewModel.swift in Sources */,
 				8E29211D27BE00FF00A53873 /* LocationDetailView.swift in Sources */,
 				8EC030A727D663AB00ACCBDD /* MockData.swift in Sources */,
+				8E95F95E27D684EB004D9551 /* Constants.swift in Sources */,
 				8E9D786627BEAB4C00E3BC6D /*  MapViewModel.swift in Sources */,
 				8E29212B27BE025F00A53873 /* LoginView.swift in Sources */,
 				8E9D785827BEA05C00E3BC6D /* AuthViewModel.swift in Sources */,
@@ -442,7 +450,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,7 +482,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
