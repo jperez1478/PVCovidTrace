@@ -22,13 +22,7 @@ struct CloudKitManager {
             
             guard let records = records else { return }
             
-            var locations: [PVLocations]  =  []
-            
-            for record in records {
-                let location = PVLocations(record: record)
-                locations.append(location)
-            }
-            
+            let locations = records.map { $0.convertToPVLocations() } //as iterating to array
             completed(.success(locations))
         }
     }
