@@ -6,6 +6,7 @@
 //
 
 import CloudKit
+import UIKit
 
 //had to call it PVLocations extaclty as the maunal data
 struct PVLocations: Identifiable {
@@ -41,6 +42,18 @@ struct PVLocations: Identifiable {
         phoneNumber = record[PVLocations.kPhoneNumber] as? String ?? "N/A"
         
     }
+    
+    func createSquareImage() -> UIImage  {
+        guard let asset = squareAsset else { return PlaceholderImage.square }
+        return asset.convertToUIImage(in: .square)
+        
+    }
+    func createBannerImage() -> UIImage  {
+        guard let asset = bannerAsset else { return PlaceholderImage.banner }
+        return asset.convertToUIImage(in: .banner)
+        
+    }
+    
 }
 
-//initializing in an extension of PVLocation
+

@@ -20,6 +20,7 @@
 		8E29212D27BE026E00A53873 /* RegistrationViewSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29212C27BE026E00A53873 /* RegistrationViewSheet.swift */; };
 		8E29213127BE02C100A53873 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29213027BE02C100A53873 /* Color+Ext.swift */; };
 		8E30F2F727D6A23900D49D89 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E30F2F627D6A23900D49D89 /* LocationManager.swift */; };
+		8E30F2F927D6AC7800D49D89 /* CKAsset+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E30F2F827D6AC7800D49D89 /* CKAsset+Ext.swift */; };
 		8E8612AB27C3F47D00F60237 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8612AA27C3F47D00F60237 /* LocationCell.swift */; };
 		8E8612B027C3FE3100F60237 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8612AF27C3FE3100F60237 /* CloudKit.framework */; };
 		8E95F95E27D684EB004D9551 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E95F95D27D684EB004D9551 /* Constants.swift */; };
@@ -47,6 +48,7 @@
 		8E29212C27BE026E00A53873 /* RegistrationViewSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewSheet.swift; sourceTree = "<group>"; };
 		8E29213027BE02C100A53873 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		8E30F2F627D6A23900D49D89 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		8E30F2F827D6AC7800D49D89 /* CKAsset+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKAsset+Ext.swift"; sourceTree = "<group>"; };
 		8E8612AA27C3F47D00F60237 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		8E8612AD27C3FC7A00F60237 /* pvCovidTrace.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pvCovidTrace.entitlements; sourceTree = "<group>"; };
 		8E8612AF27C3FE3100F60237 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
@@ -159,6 +161,7 @@
 				8E29213027BE02C100A53873 /* Color+Ext.swift */,
 				8E95F95F27D68C5E004D9551 /* CKRecord+Ext.swift */,
 				8E95F96727D691BD004D9551 /* AlertItem.swift */,
+				8E30F2F827D6AC7800D49D89 /* CKAsset+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			files = (
 				8E29212427BE021C00A53873 /* MapView.swift in Sources */,
 				8ED5382B27C6BDB300BA2375 /* PVProfile.swift in Sources */,
+				8E30F2F927D6AC7800D49D89 /* CKAsset+Ext.swift in Sources */,
 				8E9D785227BE9B4A00E3BC6D /* ProfileView.swift in Sources */,
 				8E29212627BE022700A53873 /* NewsFeed.swift in Sources */,
 				8E29212D27BE026E00A53873 /* RegistrationViewSheet.swift in Sources */,
