@@ -11,11 +11,12 @@ import SwiftUI
 @main
 struct pvCovidTraceApp: App {
     
-    
+    let locationManager = LocationManager()
     
     var body: some Scene {
         WindowGroup {
            MainTabView()
+                .environmentObject(locationManager)
         }
     }
 }

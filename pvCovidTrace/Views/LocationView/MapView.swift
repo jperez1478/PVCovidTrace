@@ -11,9 +11,12 @@ import MapKit
 
 struct MapView: View {
     
+    @EnvironmentObject private var locationManager: LocationManager
     @StateObject private var viewModel = LocationMapViewModel()
     
     var body: some View {
+       
+
         ZStack {
             Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
                 .ignoresSafeArea()
@@ -33,14 +36,16 @@ struct MapView: View {
             Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
         })
         .onAppear {
-            
-                }
-                
-            }
+            if locationManager.locations.isEmpty {
+            viewModel.getLocations(for: locationManager)
+        }
+        }
+    }
 }
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
         MapView()
+            .environmentObject(LocationManager())
     }
 }
