@@ -9,7 +9,7 @@ import CloudKit
 
 struct CloudKitManager {
     ///get locations(network call)
-    static func  getLocations(completed: @escaping (Result<[PVLocations], Error>) -> Void) async {
+    static func  getLocations(completed: @escaping (Result<[PVLocations], Error>) -> Void) {
         let sortDescriptor = NSSortDescriptor(key: PVLocations.kName, ascending: true) ///alphaebtic order
         let query = CKQuery(recordType: RecordType.location, predicate: NSPredicate(value: true))
         query.sortDescriptors = [sortDescriptor]
@@ -28,6 +28,8 @@ struct CloudKitManager {
                 let location = PVLocations(record: record)
                 locations.append(location)
             }
+            
+            completed(.success(locations))
         }
     }
 }

@@ -23,9 +23,7 @@ struct MapView: View {
             Map(coordinateRegion: $region, showsUserLocation: true)
                 .ignoresSafeArea()
                 .accentColor(Color(.systemPurple))
-                .onAppear{
-                    viewModel.checkIfLocationServicesIsEnabled()
-                }
+               
             VStack{
                 Image("pvmap")
                     .resizable()
@@ -35,7 +33,17 @@ struct MapView: View {
                 
                 Spacer()
             }
-            
+        }
+        .onAppear { 
+            CloudKitManager.getLocations { result in
+                switch result {
+                case .success(let locations):
+                    print(locations)
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+                
+            }
         }
     }
 }
