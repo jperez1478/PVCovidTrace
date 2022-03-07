@@ -10,19 +10,12 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
-    //MARK: -Properties
     
-    @StateObject private var viewModel = MapViewModel()
-    //allows acces to my model in location manager
-    
-    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 30.095264, longitude: -95.989301), span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
-    
-    @State private var alertItem : AlertItem?
+    @StateObject private var viewModel = LocationMapViewModel()
     
     var body: some View {
-        //MARK: -Body
         ZStack {
-            Map(coordinateRegion: $region, showsUserLocation: true)
+            Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
                 .ignoresSafeArea()
                 .accentColor(Color(.systemPurple))
             
@@ -36,21 +29,14 @@ struct MapView: View {
                 Spacer()
             }
         }
-        .alert(item: $alertItem, content: { alertItem in
+        .alert(item: $viewModel.alertItem, content: { alertItem in
             Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
         })
         .onAppear {
-            CloudKitManager.getLocations { result in
-                switch result {
-                case .success(let locations):
-                    print(locations)
-                case .failure(_):
-                    alertItem = AlertContext.unableToGetLocations
+            
                 }
                 
             }
-        }
-    }
 }
 
 struct MapView_Previews: PreviewProvider {

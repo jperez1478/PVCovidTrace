@@ -12,7 +12,7 @@ struct  LocationCell: View {
     
     var body: some View {
         HStack {
-            Image("Library")
+            Image("pvVillage")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 80, height: 80)
