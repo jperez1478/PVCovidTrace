@@ -31,9 +31,7 @@
 		8E9D786127BEA3C400E3BC6D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 8E9D786027BEA3C400E3BC6D /* FirebaseStorage */; };
 		8E9D786327BEA3FB00E3BC6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E9D786227BEA3FB00E3BC6D /* GoogleService-Info.plist */; };
 		8E9D786627BEAB4C00E3BC6D /*  MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D786527BEAB4C00E3BC6D /*  MapViewModel.swift */; };
-		8ED5382927C69F0B00BA2375 /* PVLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5382827C69F0B00BA2375 /* PVLocations.swift */; };
 		8ED5382B27C6BDB300BA2375 /* PVProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5382A27C6BDB300BA2375 /* PVProfile.swift */; };
-		8ED5382E27C6C1D900BA2375 /* CloudKitManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5382D27C6C1D900BA2375 /* CloudKitManger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,9 +57,7 @@
 		8E9D785727BEA05C00E3BC6D /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		8E9D786227BEA3FB00E3BC6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8E9D786527BEAB4C00E3BC6D /*  MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " MapViewModel.swift"; sourceTree = "<group>"; };
-		8ED5382827C69F0B00BA2375 /* PVLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVLocations.swift; sourceTree = "<group>"; };
 		8ED5382A27C6BDB300BA2375 /* PVProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVProfile.swift; sourceTree = "<group>"; };
-		8ED5382D27C6C1D900BA2375 /* CloudKitManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,8 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				8E9D785727BEA05C00E3BC6D /* AuthViewModel.swift */,
-				8ED5382A27C6BDB300BA2375 /* PVProfile.swift */,
-				8ED5382827C69F0B00BA2375 /* PVLocations.swift */,
 				8E9D786427BEAACF00E3BC6D /* LocationManager */,
 				8E29212F27BE02A700A53873 /* Extensions */,
 			);
@@ -194,7 +188,6 @@
 				8E11ADF527D1FF210074208A /* LocationManager.swift */,
 				8E9D786527BEAB4C00E3BC6D /*  MapViewModel.swift */,
 				8ED5382C27C6C09800BA2375 /* Managers */,
-				8E11ADF727D4A6590074208A /* PVLocation.swift */,
 			);
 			path = LocationManager;
 			sourceTree = "<group>";
@@ -202,7 +195,8 @@
 		8ED5382C27C6C09800BA2375 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				8ED5382D27C6C1D900BA2375 /* CloudKitManger.swift */,
+				8ED5382A27C6BDB300BA2375 /* PVProfile.swift */,
+				8E11ADF727D4A6590074208A /* PVLocation.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -289,7 +283,6 @@
 			files = (
 				8E29212427BE021C00A53873 /* MapView.swift in Sources */,
 				8ED5382B27C6BDB300BA2375 /* PVProfile.swift in Sources */,
-				8ED5382E27C6C1D900BA2375 /* CloudKitManger.swift in Sources */,
 				8E9D785227BE9B4A00E3BC6D /* ProfileView.swift in Sources */,
 				8E29212627BE022700A53873 /* NewsFeed.swift in Sources */,
 				8E29212D27BE026E00A53873 /* RegistrationViewSheet.swift in Sources */,
@@ -301,7 +294,6 @@
 				8E29210A27BE007A00A53873 /* pvCovidTraceApp.swift in Sources */,
 				8E29212927BE025700A53873 /* AuthenticationViewModel.swift in Sources */,
 				8E29211D27BE00FF00A53873 /* LocationDetailView.swift in Sources */,
-				8ED5382927C69F0B00BA2375 /* PVLocations.swift in Sources */,
 				8E9D786627BEAB4C00E3BC6D /*  MapViewModel.swift in Sources */,
 				8E29212B27BE025F00A53873 /* LoginView.swift in Sources */,
 				8E9D785827BEA05C00E3BC6D /* AuthViewModel.swift in Sources */,

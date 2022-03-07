@@ -31,13 +31,14 @@ struct PVLocations {
 
     init(record: CKRecord) {
         ckRecordID = record.recordID
-        name = record[PVLocation.kName] as? String ?? "N/A"
-        description = record[PVLocation.KDescription] as? String ?? "N/A"
-        squareAsset = record[PVLocation.kSquareAsset] as? CKAsset
-        bannerAsset = record[PVLocation.kBannerAsset] as? CKAsset
-        adresss = record[PVLocation.KAdress] as? String ?? "N/A"
-        location = record[PVLocation.kLocation] as? CLLocation ?? CLLocation(latitude: 0, longitude: 0)
-        phoneNumber = record[PVLocation.kPhoneNumber] as? String ?? "N/A"
+        name  = record[PVLocations.kName] as? String ?? "N/A"
+        description = record[PVLocations.kDescription] as? String ?? "N/A"
+        squareAsset = record[PVLocations.kSquareAsset] as? CKAsset
+        bannerAsset = record[PVLocations.kBannerAsset] as? CKAsset
+        adresss = record[PVLocations.kAdress] as? String ?? "N/A"
+        location = record[PVLocations.klocation] as? CLLocation ?? CLLocation(latitude: 0, longitude: 0)
+        phoneNumber = record[PVLocations.kPhoneNumber] as? String ?? "N/A"
+        
     }
 }
 

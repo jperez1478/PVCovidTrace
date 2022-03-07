@@ -21,6 +21,7 @@ struct PVProfile {
     let firstName: String
     let lastName: String
     let covidStatus: String
+    let isCheckedIn: CKRecord.Reference? = nil 
   
     init(record: CKRecord) {
         ckRecodID   = record.recordID
