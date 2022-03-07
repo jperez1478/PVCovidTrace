@@ -16,11 +16,9 @@ struct LocationDetailView: View {
     var location: PVLocations
     
     var body: some View {
-        VStack{
-            Image("Library")
-                .resizable()
-                .scaledToFit()
-                .frame(height: 150)
+        VStack(spacing: 16){
+            BannerImageView(imageName: "og")
+            
             HStack {
                 AdressView(adress: location.adresss)
                 Spacer()
@@ -139,6 +137,17 @@ struct FirstNameAvatarView: View {
                 .lineLimit(1)
                 .minimumScaleFactor(0.75)
         }
+    }
+}
+struct BannerImageView: View {
+    
+    var imageName: String
+    
+    var body: some View {
+        Image(imageName)
+            .resizable()
+            .scaledToFill()
+            .frame(height: 120)
     }
 }
 

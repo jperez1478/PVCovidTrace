@@ -18,7 +18,10 @@ struct MapView: View {
        
 
         ZStack {
-            Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
+            Map(coordinateRegion: $viewModel.region, annotationItems: locationManager.locations) {  location in
+                MapMarker(coordinate: location.location.coordinate, tint: .brandPrimary)
+                
+            }
                 .ignoresSafeArea()
                 .accentColor(Color(.systemPurple))
             

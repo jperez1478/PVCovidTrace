@@ -8,7 +8,8 @@
 import CloudKit
 
 //had to call it PVLocations extaclty as the maunal data
-struct PVLocations {
+struct PVLocations: Identifiable {
+    
     //creating constants
     static let kName = "name"
     static let kDescription = "description"
@@ -19,7 +20,7 @@ struct PVLocations {
     static let klocation   = "location"
     
     
-    let ckRecordID: CKRecord.ID //reference to our pvProfile  to our location to checj in recordid imp
+    let id: CKRecord.ID //reference to our pvProfile  to our location to checj in recordid imp
     let name: String
     let description: String
     let squareAsset: CKAsset! //unwrapping will handle or nill error with the imgs
@@ -30,7 +31,7 @@ struct PVLocations {
     
 
     init(record: CKRecord) {
-        ckRecordID = record.recordID
+        id = record.recordID
         name  = record[PVLocations.kName] as? String ?? "N/A"
         description = record[PVLocations.kDescription] as? String ?? "N/A"
         squareAsset = record[PVLocations.kSquareAsset] as? CKAsset
