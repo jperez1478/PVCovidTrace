@@ -17,7 +17,7 @@ struct LocationDetailView: View {
     
     var body: some View {
         VStack{
-            Image("og")
+            Image("Library")
                 .resizable()
                 .scaledToFit()
                 .frame(height: 150)
