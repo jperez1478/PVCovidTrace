@@ -31,6 +31,7 @@
 		8E9D785227BE9B4A00E3BC6D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D785127BE9B4A00E3BC6D /* ProfileView.swift */; };
 		8EC030A727D663AB00ACCBDD /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC030A627D663AB00ACCBDD /* MockData.swift */; };
 		8ED5382B27C6BDB300BA2375 /* PVProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5382A27C6BDB300BA2375 /* PVProfile.swift */; };
+		F16E87B027E904500043D315 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16E87AF27E904500043D315 /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		8E9D785127BE9B4A00E3BC6D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		8EC030A627D663AB00ACCBDD /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		8ED5382A27C6BDB300BA2375 /* PVProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVProfile.swift; sourceTree = "<group>"; };
+		F16E87AF27E904500043D315 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			children = (
 				8E29212827BE025700A53873 /* AuthenticationViewModel.swift */,
 				8E29212C27BE026E00A53873 /* RegistrationViewSheet.swift */,
+				F16E87AF27E904500043D315 /* Login.swift */,
 				8E29212E27BE028600A53873 /* Models */,
 			);
 			path = Authentication;
@@ -278,6 +281,7 @@
 				8E11ADF827D4A6590074208A /* PVLocation.swift in Sources */,
 				8E8612AB27C3F47D00F60237 /* LocationCell.swift in Sources */,
 				8E29213127BE02C100A53873 /* Color+Ext.swift in Sources */,
+				F16E87B027E904500043D315 /* Login.swift in Sources */,
 				8E95F96627D68D8A004D9551 /* CloudKitManager.swift in Sources */,
 				8E29211B27BE00F300A53873 /* LocationListView.swift in Sources */,
 				8E95F96A27D699AD004D9551 /* LocationMapvIiewModel.swift in Sources */,
