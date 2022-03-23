@@ -77,4 +77,5 @@ Create a cloudkitManger file to be able to make network call to our cloudkit dat
 
 <img width="736" alt="Screen Shot 2022-03-23 at 1 00 47 AM" src="https://user-images.githubusercontent.com/61983873/159633872-f799fc11-ee6c-4432-b07f-a00da2179902.png">
 
+<img width="420" alt="Screen Shot 2022-03-23 at 1 03 20 AM" src="https://user-images.githubusercontent.com/61983873/159634166-3f8f789a-58e2-4ba4-9960-8501fcb20b01.png">
 
