@@ -54,7 +54,11 @@ apple wont deal with siwft packages or sdks making the app heavy
   1) Public Database 
   2) Private Database 
   3) Shared Database 
- 
+
+Will be using icloud Public Databse: To allow other users see users checked in in the locations 
+
+ <img width="300" alt="Screen Shot 2022-03-23 at 12 58 42 AM" src="https://user-images.githubusercontent.com/61983873/159633564-8ac53580-9115-4eaf-9359-cbddba205b98.png">
+
  
  #Break down of the database in icloud and saving locations 
  
@@ -63,6 +67,8 @@ apple wont deal with siwft packages or sdks making the app heavy
 # Backend 
 
 Create a cloudkitManger file to be able to make network call to our cloudkit database 
+
+
 <img width="263" alt="Screen Shot 2022-03-07 at 12 19 07 PM" src="https://user-images.githubusercontent.com/61983873/157105436-bdf7e97b-f4d2-4c38-b2f7-ea9fcd924dac.png">
 <img width="579" alt="Screen Shot 2022-03-07 at 12 34 14 PM" src="https://user-images.githubusercontent.com/61983873/157105462-d52b2df5-8e07-42e7-8b0f-fb42cafa5626.png">
 
