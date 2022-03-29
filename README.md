@@ -1,5 +1,6 @@
 # PVCovidTrace
 
+
 # SeniorProject
 
 ## Current Problem 
@@ -14,7 +15,9 @@ With this mobile application, college campuses can help better inform students a
 
 # Cloud Kit Database
 
+
 Cloud kit was introduced by apple in 2014 esentially its apple's Back End Service. 
+
 
 Guranteed with no scaling issues , apple uses it with million of users notes app, appstore,news app. 
 
