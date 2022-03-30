@@ -25,7 +25,7 @@ Guranteed with no scaling issues, apple uses it with million of users notes app,
  - free data up to 10GB 
  - cloudkit free up the more users you have 
 
-Cloud kit Pros 
+Cloud Kit Pros 
 1. Automatic Authentication : No need for login screen , linked to user icloud account 
       - user is created once the icloud is connected 
 2. Syncs Across Devices 
@@ -42,7 +42,7 @@ Cloud kit Pros
  
 # Why we drifted away from firebase 
 Firebase is owned by google 
-Apple wont deal with siwft packages or sdks making the app heavy 
+Apple won't deal with Swift packages or sdks making the app heavy 
 
 # Setting Up iCloud Kit 
   - First stat with making  a "Container" 
@@ -69,7 +69,8 @@ Will be using icloud Public Databse: To allow other users see users checked in i
 
 # Backend 
 
-Create a cloudkitManger file to be able to make network call to our cloudkit database 
+Create a cloudkitManger file to be able to make network call to our cloudkit database.
+It was a great move the Cloudkit backend as it is a great way to utilize our Developer license.
 
 
 <img width="263" alt="Screen Shot 2022-03-07 at 12 19 07 PM" src="https://user-images.githubusercontent.com/61983873/157105436-bdf7e97b-f4d2-4c38-b2f7-ea9fcd924dac.png">
