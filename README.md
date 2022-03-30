@@ -16,10 +16,10 @@ With this mobile application, college campuses can help better inform students a
 # Cloud Kit Database
 
 
-Cloud kit was introduced by apple in 2014 esentially its apple's Back End Service. 
+Cloud kit was introduced by Apple in 2014 esentially its Apple's Back End Service. 
 
 
-Guranteed with no scaling issues , apple uses it with million of users notes app, appstore,news app. 
+Guranteed with no scaling issues, apple uses it with million of users notes app, appstore, news app. 
 
  //price database 
  - free data up to 10GB 
@@ -42,7 +42,7 @@ Cloud kit Pros
  
 # Why we drifted away from firebase 
 Firebase is owned by google 
-apple wont deal with siwft packages or sdks making the app heavy 
+Apple wont deal with siwft packages or sdks making the app heavy 
 
 # Setting Up iCloud Kit 
   - First stat with making  a "Container" 
